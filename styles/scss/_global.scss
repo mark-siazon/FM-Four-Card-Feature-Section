@@ -6,4 +6,24 @@
 }
 
 body {
+  font-size: 15px;
+  font-family: 'Poppins', 'Sans-serif';
+  background-color: $grayish-blue;
+  min-height: 100vh;
+
+  @extend %display-flex;
+  @extend %justify-center;
+  @extend %align-items-center;
+  flex-direction: column;
+}
+
+.wrapper{
+  margin-top: 10vh;
+  width: 300px;
+  
+  @extend %display-flex;
+  @extend %justify-center;
+  @extend %align-items-center;
+  flex-direction: column;
+
 }

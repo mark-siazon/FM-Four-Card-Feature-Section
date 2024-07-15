@@ -1,0 +1,31 @@
+.wrapper, body {
+  display: flex;
+}
+
+.wrapper, body {
+  justify-content: center;
+}
+
+.wrapper, body {
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", "Sans-serif";
+  background-color: hsl(229, 6%, 66%);
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin-top: 10vh;
+  width: 300px;
+  flex-direction: column;
+}/*# sourceMappingURL=styles.css.map */
