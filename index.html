@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,64 +9,71 @@
   <link rel="stylesheet" href="styles/styles.css">
   <title>Frontend Mentor | Four card feature section</title>
 </head>
+
 <body>
 
-  <div class="wrapper">
-    <main role="main">
-      <header role="banner">
-        <h1>
-          <span>Reliable, efficient delivery</span>
-          Powered by Technology
-        </h1>
+  <main role="wrapper">
+    <header role="banner">
+      <h1>
+        <span>Reliable, efficient delivery</span>
+        <br>Powered by Technology
+      </h1>
 
-        <h2>
-          Our Artificial Intelligence powered tools use millions of project data points 
-          to ensure that your project is successful
-        </h2>
+      <h2>
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful
+      </h2>
 
-      </header>
+    </header>
 
-      <section>
-        <article class="col-1 card-0">
+    <section>
+      <article>
+        <div class="card-desc">
           <h3>Supervisor</h3>
           <p>Monitors activity to identify project roadblocks</p>
-          <img src="assets/icon-supervisor.svg" alt="A magnifying glass with an eye referring to Supervisor">
-        </article>
+        </div>
+        <img src="assets/icon-supervisor.svg" alt="A magnifying glass with an eye referring to Supervisor">
+      </article> <!-- Column 1 -->
 
+      <div>
 
-        <div class="col-2">
-          
-          <article class="card-1">
+        <article>
+          <div class="card-desc">
             <h3>Team Builder</h3>
             <p>Scans our talent network to create the optimal team for your project</p>
-            <img src="assets/icon-team-builder.svg" alt="A huge house referring to Team Builder">
-          </article>
-          
-          <article class="card-2">
-            <h3>Karma</h3>
-            <p>Regularly evaluates our talent to ensure quality</p>
-            <img src="assets/icon-karma.svg" alt="A glowing light bulb referring to Karma">
-          </article>
-
-        </div>
-
-
-        <article class="col-3 card-4">
-          <h3>Calculator</h3>
-          <p>Uses data from past projects to provide better delivery estimates</p>
-          <img src="assets/icon-calculator.svg" alt="A Monitor with some software referring to Calculator">
+          </div>
+          <img src="assets/icon-team-builder.svg" alt="A huge house referring to Team Builder">
         </article>
 
-      </section>
-    </main>
+        <article>
+          <div class="card-desc">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+          </div>
+          <img src="assets/icon-karma.svg" alt="A glowing light bulb referring to Karma">
+        </article>
 
-    <footer>
-      <p class="attribution"> Challenge by 
-        <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub" target="_blank" rel="noopener noreferrer">
-          Frontend Mentor 
-        </a> <br> 
-        Coded by <a href="https://github.com/mark-siazon/FM-Four-Card-Feature-Section">M. Siazon</a>.
-      </p>
-    </footer>
-  </div>
+      </div> <!-- Column 2 -->
+
+      <article>
+        <div class="card-desc">
+          <h3>Calculator</h3>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+        </div>
+        <img src="assets/icon-calculator.svg" alt="A Monitor with some software referring to Calculator">
+      </article>  <!-- Column 3 -->
+
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution"> Challenge by
+      <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub" target="_blank"
+        rel="noopener noreferrer">
+        Frontend Mentor
+      </a> <br>
+      Coded by <a href="https://github.com/mark-siazon/FM-Four-Card-Feature-Section">M. Siazon</a>.
+    </p>
+  </footer>
+
 </html>

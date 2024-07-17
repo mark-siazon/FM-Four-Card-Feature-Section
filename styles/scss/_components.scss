@@ -1,0 +1,56 @@
+@import '_media.scss';
+
+main, section, section > div, article{
+  @extend %col;
+  @extend %display-flex;
+}
+
+main, section, section > div{
+  @extend %justify-center;
+  @extend %align-items-center;   
+}
+
+
+main{
+  margin-top: 5vh;
+  width: 310px;
+  max-width: 319px;;
+  gap: 45px;
+
+  section {
+    @include respond-to(large){
+      flex-direction: row;
+    }
+  }
+}
+
+header {
+  h2{
+    margin-top: 16px;
+    
+    @include respond-to(large){
+      width: 519px;
+    }
+  }
+}
+
+section, section > div{
+  gap: 29px;
+}
+
+section > div > article:nth-child(1) {
+  border-top: 5px solid nth($primary-colors, 4);
+}
+
+article{
+  justify-content: flex-end;
+  align-items: flex-end;
+  @include card-styles();
+
+  // Use nth-of-type to assign colors to each card
+  @for $i from 1 through length($primary-colors) {
+    &:nth-child(#{$i}) {
+      border-top: 5px solid nth($primary-colors, $i);
+    }
+  }
+}

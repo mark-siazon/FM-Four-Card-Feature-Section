@@ -1,13 +1,21 @@
-.wrapper, body {
+main, section, section > div, article, body {
   display: flex;
 }
 
-.wrapper, body {
+main, section, section > div, article, body {
+  flex-direction: column;
+}
+
+main, section, section > div {
   justify-content: center;
 }
 
-.wrapper, body {
+main, section, section > div, body {
   align-items: center;
+}
+
+article .card-desc p, article .card-desc h3, header h2 {
+  color: hsl(234, 12%, 34%);
 }
 
 * {
@@ -19,13 +27,119 @@
 body {
   font-size: 15px;
   font-family: "Poppins", "Sans-serif";
-  background-color: hsl(229, 6%, 66%);
+  background-color: hsl(0, 0%, 98%);
   min-height: 100vh;
+}
+
+footer {
+  display: none;
+}
+
+main {
+  margin-top: 5vh;
+  width: 310px;
+  max-width: 319px;
+  gap: 45px;
+}
+@media only screen and (min-width: 1024px) {
+  main section {
+    flex-direction: row;
+  }
+}
+
+header h2 {
+  margin-top: 16px;
+}
+@media only screen and (min-width: 1024px) {
+  header h2 {
+    width: 519px;
+  }
+}
+
+section, section > div {
+  gap: 29px;
+}
+
+section > div > article:nth-child(1) {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+article {
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: max-content;
+  height: 217px;
+  padding: 26px 19px;
+  gap: 33px;
+  opacity: 0.8;
+  border-radius: 6px;
+  background: #FCFCFC;
+  box-shadow: 0px 8px 10px 0px #DAE4F0;
+}
+article .card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 265px;
+}
+article:nth-child(1) {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+article:nth-child(2) {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+article:nth-child(3) {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+article:nth-child(4) {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+body, main, section, section > div, article {
+  display: flex;
+}
+
+body, main, section, section > div, article {
   flex-direction: column;
 }
 
-.wrapper {
-  margin-top: 10vh;
-  width: 300px;
-  flex-direction: column;
+main, section, section > div {
+  justify-content: center;
+}
+
+body, main, section, section > div {
+  align-items: center;
+}
+
+article .card-desc p, article .card-desc h3, header h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+header {
+  text-align: center;
+  font-weight: 600;
+}
+header h1 {
+  font-size: 1.6rem;
+  padding: 0;
+  opacity: 0.7;
+  min-width: 315px;
+}
+header span {
+  font-weight: 275;
+}
+header h2 {
+  font-size: 1.0666666667rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+article .card-desc h3 {
+  font-size: 1.3333333333rem;
+  font-weight: 600;
+}
+article .card-desc p {
+  font-size: 0.9333333333rem;
+  font-weight: 400;
+  opacity: 0.8;
 }/*# sourceMappingURL=styles.css.map */
