@@ -1,0 +1,43 @@
+@import '_mixins.scss';
+@import '_variables.scss';
+
+header {
+  text-align: center;
+  font-weight: 600;
+  
+  h1{
+    font-size: px-to-rem(24);
+    padding: 0;
+    opacity: 0.7;
+    min-width: 315px;
+  }
+
+  span{
+    font-weight: 275;
+  }
+
+  h2{
+    @extend %color-primary;
+    font-size: px-to-rem(16);
+    font-weight: 400;
+    opacity: 0.5;
+  }
+}
+
+article{
+  .card-desc{
+    h3{
+      @extend %color-primary;
+      font-size: px-to-rem(20);
+      font-weight: 600;
+    }
+
+    p{
+      @extend %color-primary;
+      font-size: px-to-rem(14);
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+  }
+}

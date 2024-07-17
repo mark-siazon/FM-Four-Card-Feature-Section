@@ -1,5 +1,15 @@
+@import '_variables.scss';
+
 %display-flex{
   display: flex;
+}
+
+%col{
+  flex-direction: column;
+}
+
+%row{
+  flex-direction: row;
 }
 
 %justify-center{
@@ -10,6 +20,37 @@
   align-items: flex-start;
 }
 
+%align-items-end{
+  align-items: end;
+}
+
 %align-items-center{
   align-items: center;
+}
+
+%color-primary{
+  color: $very-dark-blue;
+}
+
+@mixin card-styles(){
+  width: max-content;
+  height: 217px;
+  padding: 26px 19px;
+  gap: 33px;
+  opacity: 0.8;
+  border-radius: 6px;
+  background: #FCFCFC;
+  box-shadow: 0px 8px 10px 0px #DAE4F0;
+
+  .card-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 265px;
+  }
+}
+
+@function px-to-rem($rem) {
+  $remValue: calc($rem / 15); // Assuming base font size of 15px
+  @return #{$remValue}rem; 
 }
