@@ -32,10 +32,22 @@
   color: $very-dark-blue;
 }
 
+%text-center{
+  text-align: center;
+}
+
+%fw-400{
+  font-weight: 400;
+}
+
+%fw-600{
+  font-weight: 600;
+}
+
 @mixin card-styles(){
   width: max-content;
   height: 217px;
-  padding: 26px 19px;
+  padding: 19px;
   gap: 33px;
   opacity: 0.8;
   border-radius: 6px;
@@ -43,14 +55,14 @@
   box-shadow: 0px 8px 10px 0px #DAE4F0;
 
   .card-desc{
-    display: flex;
-    flex-direction: column;
+    @extend %display-flex;
+    @extend %col;
     gap: 5px;
     max-width: 265px;
   }
 }
 
 @function px-to-rem($rem) {
-  $remValue: calc($rem / 15); // Assuming base font size of 15px
+  $remValue: calc($rem / 15); // base font size: 15px
   @return #{$remValue}rem; 
 }

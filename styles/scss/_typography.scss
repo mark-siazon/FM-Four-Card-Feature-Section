@@ -1,9 +1,8 @@
-@import '_mixins.scss';
 @import '_variables.scss';
 
 header {
-  text-align: center;
-  font-weight: 600;
+  @extend %text-center;
+  @extend %fw-600;
   
   h1{
     font-size: px-to-rem(24);
@@ -13,13 +12,13 @@ header {
   }
 
   span{
-    font-weight: 275;
+    font-weight: 200;
   }
 
   h2{
     @extend %color-primary;
     font-size: px-to-rem(16);
-    font-weight: 400;
+    @extend %fw-400;
     opacity: 0.5;
   }
 }
@@ -29,15 +28,31 @@ article{
     h3{
       @extend %color-primary;
       font-size: px-to-rem(20);
-      font-weight: 600;
+      @extend %fw-600;
     }
 
     p{
       @extend %color-primary;
       font-size: px-to-rem(14);
-      font-weight: 400;
+      @extend %fw-400;
       opacity: 0.8;
     }
+  }
+}
 
+footer{
+  @extend %text-center;
+  margin-bottom: 5vh;
+
+  a{
+    @extend %fw-600;
+    color: nth($primary-colors,1);
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+    
+    &:hover{
+      color: nth($primary-colors,3);
+      opacity: 1;
+    }
   }
 }
