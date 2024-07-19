@@ -1,12 +1,3 @@
-
-
-![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 # Frontend Mentor - Four card feature section
 
 This is a solution to the [Four card feature section coding challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub).
@@ -23,8 +14,6 @@ Frontend Mentor challenges help improve skills by building realistic projects.
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [Personal Notes](#notes)
 
 ## Overview:
 
@@ -46,15 +35,15 @@ Preview of initial design:
 
 | Fullscreen View (Desktop)                             |
 | ----------------------------------------------------- |
-| ![](documentations_md/design-finished/0.1-Original_.jpg) | 
+| ![](documentations_md/design-finished/0.1-Original_20240719_141305.jpg) | 
 
 | Animated Preview |
 | ---------------------------------------------------------------------------------- |
-| ![](documentations_md/design-finished/0.3-animatedResult_.gif)                                        |
+| ![](documentations_md/design-finished/0.3-animatedResult-20240719_142050.gif)                                        |
 
 <br>
 
-**Note: This is a Mobile-First Approach & Wait for the GIF to load **
+**Note: This is a Mobile-First Approach & Wait for the GIF to load**
 
 <br>
 
@@ -64,17 +53,17 @@ All viewports were included (except for the 4k view), in case the observer wishe
 
 | Desktop View (1440px)                                | Laptop View (1024px)                                | Tablet View (768px)                                    |
 | ---------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------ |
-| ![](documentations_md/design-finished/1.0-Desktop-.jpg) | ![](documentations_md/design-finished/1.1-Laptop-.jpg) | ![](documentations_md/design-finished/1.2-Tablet-.jpg) |
+| ![](documentations_md/design-finished/1.0-Desktop-20240719_141505.jpg) | ![](documentations_md/design-finished/1.1-Laptop-20240719_141536.jpg) | ![](documentations_md/design-finished/1.2-Tablet-20240719_141601.jpg) |
 
 | Mobile L (430px)                                     | Mobile M (375px)                          |
 | ----------------------------------------------------- | ---------------------------------------------------- |
-| ![](documentations_md/design-finished/1.3-MobileL-.jpg) | ![](documentations_md/design-finished/1.4-MobileM-.jpg)
+| ![](documentations_md/design-finished/1.3-MobileL-20240719_141630.jpg) | ![](documentations_md/design-finished/1.4-MobileM-20240719_141654.jpg)
 </div>
 
 ### Links:
 
-- Live Site URL: [Website Link - Click Me](xxx)
-- Solution URL: [FrontEndMentor - Click Me](xxx)
+- Live Site URL: [Website Link - Click Me](https://mark-siazon.github.io/FM-Four-Card-Feature-Section/)
+- Solution URL: [FrontEndMentor - Click Me](https://www.frontendmentor.io/solutions/four-card-feature-section-responsive-mobile-first-using-advance-scss-R8Kr1ihsLR)
 
 ## My process:
 
@@ -82,6 +71,7 @@ All viewports were included (except for the 4k view), in case the observer wishe
 
 - HTML5, CSS3
 - Mobile-First Approach
+- SASS/SCSS
 
 ### What I learned:
 
@@ -91,10 +81,7 @@ Recap over some of the major learnings while working through this project:
 
 - Review of Semantic HTML & CSS, CSS Flex Layout
 - Writing DRY code by combining similar styles
-- Box Model & Responsive Design
-- Implement BEM (Block Element Modifier) naming convention for classes, enhancing code readability and maintainability.
-
-
+- More advance SCSS techniques
 
 <hr>
 
@@ -104,26 +91,3 @@ Recap over some of the major learnings while working through this project:
 - Github - [@Mark-Siazon](https://github.com/Mark-Siazon)
 - Frontend Mentor - [@Iron-Mark](https://www.frontendmentor.io/profile/Iron-Mark)
   - _(The Assets used in this project is originally from FrontendMentor)_
-
-## Acknowledgments:
-
-- I would like to acknowledge the hard work and dedication I put into this project while injured, yet I'm building this project with a right wrist sprain.
-- I am grateful for my friends and those who motivate me to push through and not settle for relaxation.
-- Also to tutorial i watched on youtube that helped me solve the background styling.
-- I hope that this website serves its intended purpose. Thank you!
-
-<br>
-
-### Next Action (Soon):
-- [ ] Add some Javascript Functionalities
-- [ ] Create my own modified version of this project.
-- [ ] TBA...
-
-## Notes:
-
-- I would be happy to receive comments, criticism, and such that could improve the website:
-  - Cleaner Code
-  - Better Practice/Approach to making this website.
-- Feel free to approach and contact me :>
-  - _Jul , 2024 (Initial Coding)_
-  - _Jul , 2024 (Finalize Styles + Documentation)_
